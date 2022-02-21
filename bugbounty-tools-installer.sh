@@ -73,6 +73,11 @@ mkdir ~/Wordlist/
 
 echo "{$GREEN}Installing Nuclei${ENDCOLOR}"
 cd ~/Tools/
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+ln ${HOME}/go/bin/nabbu /usr/local/bin/nabbu
+
+echo "{$GREEN}Installing Nuclei${ENDCOLOR}"
+cd ~/Tools/
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 ln ${HOME}/go/bin/nuclei /usr/local/bin/nuclei
 
