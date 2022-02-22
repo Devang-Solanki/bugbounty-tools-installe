@@ -30,5 +30,5 @@ cat <js_file> | grep -oh "\"\/[a-zA-Z0-9_/?=&]*\"" | sed -e 's/^"//' -e 's/"$//'
 
 ### Dump In Scope Domain From `chaos.projectdiscovery.io`
 ```bash
-wget "https://chaos-data.projectdiscovery.io/<domain name>.zip" -o /tmp/<domain name>.zip && unzip *.zip && mv /tmp/.*txt . 
+wget "https://chaos-data.projectdiscovery.io/<domain name>.zip" -o /tmp/<domain name>.zip && unzip /tmp/*.zip && mv /tmp/.*txt . 
 ```
